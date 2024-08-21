@@ -2,7 +2,7 @@
 
 The `$` symbol is used to show a command that should be run. `#` indicates that this command should be run as root.
 
-WORK IN PROGRESS: setup instructions are incomplete and setup instructions already presented have not all been tested.
+WORK IN PROGRESS: setup instructions are incomplete and setup instructions already presented have not all been tested so don't expect them to work without fixing issues yourself.
 
 All dependencies use names from arch linux's repositories (official and AUR). Other repositories will likely have similar names for projects that will probably work fine.
 AUR dependencies are installed using yay, you can use a different AUR helper or install those packages manually if desired.
