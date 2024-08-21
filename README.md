@@ -109,3 +109,5 @@ Having a terminal is required, an app launcher is highly recommended. browser an
 # TODO
 * Setup instructions for all configs that do not work out of the box
 * Add files that are linked to
+* Change shebangs to use `/usr/bin/env`
+* Change all file paths to `~/` if username is specified
