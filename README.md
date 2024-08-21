@@ -1,6 +1,6 @@
 # dotfiles
 
-WORK IN PROGRESS: setup instructions are incomplete
+WORK IN PROGRESS: setup instructions are incomplete and setup instructions already presented have not all been tested.
 
 All dependencies use names from arch linux's repositories (official and AUR).
 AUR dependencies are installed using yay, you can use a different AUR helper or install those packages manually if desired.
@@ -19,7 +19,7 @@ Warning: the following command may override files in `~/.config/` if they alread
 Required:
 `sudo pacman -S hyprland`
 Optional:
-`sudo pacman -S dunst swww waybar python-pywal gthumb`
+`sudo pacman -S dunst swww waybar python-pywal gthumb wayvnc`
 `yay -S polychromatic`
 ```
 dunst: notifications
@@ -28,6 +28,7 @@ waybar: info bar
 python-pywal: set colours based on wallpaper
 polychromatic: sets lighting for razer devices
 gthumb: easy way to set tags for wallpapers
+wayvnc: use a second monitor through a vnc connection
 ```
 
 ## Wallpaper
@@ -62,6 +63,19 @@ Note: this requires `~/.config/wal/templates/colors-hyprland.conf`
 Monitor setup is located in `~/.config/hypr/monitors/monitors.conf`.
 See [Hyprland Documentation](https://wiki.hyprland.org/Configuring/Monitors/) for information on how to set this up.
 
-TODO:
+### Wayvnc
+Used to have a second monitor over a VNC connection.
+
+#### Dependencies
+```sudo pacman -S wayvnc```
+
+#### Setup
+Add a username and password to `~/.config/wayvnc/config`
+
+Generate a key pair with openssl
+
+Start wayvnc with `~/.config/hypr/headless-monitor.sh` this script can be invoked with the keyboard shortcut `Mod4+F4`
+
+# TODO
 * Setup instructions for all configs that do not work out of the box
 * Add files that are linked to
