@@ -1,5 +1,7 @@
 # dotfiles
 
+The `$` symbol is used to show a command that should be run. `#` indicates that this command should be run as root.
+
 WORK IN PROGRESS: setup instructions are incomplete and setup instructions already presented have not all been tested.
 
 All dependencies use names from arch linux's repositories (official and AUR).
@@ -8,19 +10,19 @@ AUR dependencies are installed using yay, you can use a different AUR helper or 
 Warning: These are not general use configs. Some of them are specifically designed to work well with my hardware or other software that I use so some parts may not work without modification.
 
 # General
-`git clone https://github.com/Ce1er/dotfiles.git`
+```$ git clone https://github.com/Ce1er/dotfiles.git```
 
 Warning: the following command may override files in `~/.config/` if they already exist, make sure you have a backup.
-`cp -r dotfiles/* ~/.config/`
+```$ cp -r dotfiles/* ~/.config/```
 
 # Hyprland
 
 ## Dependencies
 Required:
-`sudo pacman -S hyprland`
+`# pacman -S hyprland`
 Optional:
-`sudo pacman -S dunst swww waybar python-pywal gthumb wayvnc`
-`yay -S polychromatic`
+`# pacman -S dunst swww waybar python-pywal gthumb wayvnc`
+`$ yay -S polychromatic`
 ```
 dunst: notifications
 swww: wallpaper setter
@@ -67,7 +69,7 @@ See [Hyprland Documentation](https://wiki.hyprland.org/Configuring/Monitors/) fo
 Used to have a second monitor over a VNC connection.
 
 #### Dependencies
-```sudo pacman -S wayvnc```
+```# pacman -S wayvnc```
 
 #### Setup
 Add a username and password to `~/.config/wayvnc/config`
@@ -80,10 +82,10 @@ Start wayvnc with `~/.config/hypr/headless-monitor.sh` this script can be invoke
 
 ## Dependencies
 Required:
-`sudo pacman -S qtile`
+```# pacman -S qtile```
 Optional:
-`sudo pacman -S feh picom dunst rofi kitty python-iwlib`
-`yay -S qtile-extras`
+```# pacman -S feh picom dunst rofi kitty python-iwlib```
+```$ yay -S qtile-extras```
 ```
 feh: wallpaper tool
 picom: transparent windows
