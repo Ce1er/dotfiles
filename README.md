@@ -4,3 +4,4 @@ Warning: These are not general use configs. Some of them are specifically design
 
 TODO:
 * Setup instructions for all configs that do not work out of the box
+* Add files that are linked to
