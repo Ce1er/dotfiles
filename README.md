@@ -13,6 +13,7 @@ Warning: These are not general use configs. Some of them are specifically design
 ```$ git clone https://github.com/Ce1er/dotfiles.git```
 
 Warning: the following command may override files in `~/.config/` if they already exist, make sure you have a backup.
+
 ```$ cp -r dotfiles/* ~/.config/```
 
 # Hyprland
