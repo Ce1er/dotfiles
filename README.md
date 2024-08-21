@@ -76,6 +76,33 @@ Generate a key pair with openssl
 
 Start wayvnc with `~/.config/hypr/headless-monitor.sh` this script can be invoked with the keyboard shortcut `Mod4+F4`
 
+# Qtile
+
+## Dependencies
+Required:
+`sudo pacman -S qtile`
+Optional:
+`sudo pacman -S feh picom dunst rofi kitty python-iwlib`
+`yay -S qtile-extras`
+```
+feh: wallpaper tool
+picom: transparent windows
+dunst: notifications
+rofi: app launcher
+kitty: terminal emulator
+qtile-extras: eye-candy
+python-iwlib: wifi info in bar
+```
+
+## Setup
+In `~/.config/qtile/config.py/` change default apps. These can be found under the heading:
+```
+# --------------------------------------------------------
+# Set default apps
+# --------------------------------------------------------
+```
+Having a terminal is required, an app launcher is highly recommended. browser and file_manager are optional although most users will use them.
+
 # TODO
 * Setup instructions for all configs that do not work out of the box
 * Add files that are linked to
