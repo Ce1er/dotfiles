@@ -20,6 +20,7 @@ Warning: the following command may override files in `~/.config/` if they alread
 ## Dependencies
 Required:
 ```# pacman -S hyprland```
+
 Optional:
 ```# pacman -S dunst swww waybar python-pywal gthumb wayvnc```
 ```$ yay -S polychromatic```
