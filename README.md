@@ -4,7 +4,7 @@ The `$` symbol is used to show a command that should be run. `#` indicates that 
 
 WORK IN PROGRESS: setup instructions are incomplete and setup instructions already presented have not all been tested.
 
-All dependencies use names from arch linux's repositories (official and AUR).
+All dependencies use names from arch linux's repositories (official and AUR). Other repositories will likely have similar names for projects that will probably work fine.
 AUR dependencies are installed using yay, you can use a different AUR helper or install those packages manually if desired.
 
 Warning: These are not general use configs. Some of them are specifically designed to work well with my hardware or other software that I use so some parts may not work without modification.
@@ -82,7 +82,8 @@ Start wayvnc with `~/.config/hypr/headless-monitor.sh` this script can be invoke
 
 ## Dependencies
 Required:
-```# pacman -S qtile```
+```# pacman -S qtile xorg```
+Not all packages from the xorg virtual package are required however I have not tested which ones are necessary.
 Optional:
 ```# pacman -S feh picom dunst rofi kitty python-iwlib```
 ```$ yay -S qtile-extras```
