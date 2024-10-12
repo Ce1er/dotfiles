@@ -113,3 +113,13 @@ Having a terminal is required, an app launcher is highly recommended. browser an
 * Add files that are linked to
 * Change shebangs to use `/usr/bin/env`
 * Change all file paths to `~/` if username is specified
+
+# Neovim
+
+## Dependencies
+Nvchad: https://nvchad.com/docs/quickstart/install
+
+## Setup
+1. Follow Nvchad installation instructions
+2. Override files in ~/.config/nvim/* with the ones in dotfiles/.config/nvim/*
+3. Update Lazy and Mason
