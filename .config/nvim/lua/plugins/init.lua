@@ -64,4 +64,36 @@ return {
       },
     },
   },
+  {
+    "stevearc/overseer.nvim",
+    requires = "akinsho/toggleterm.nvim",
+    config = function()
+      require("configs.overseer").setup()
+    end,
+    lazy = true,
+    cmd = { "OverseerRun", "OverseerToggle" },
+  },
+  {
+    "akinsho/toggleterm.nvim",
+    version = "*",
+    config = function()
+      require("toggleterm").setup()
+    end,
+  },
+  -- {
+  --   "CRAG666/code_runner.nvim",
+  --   requires = { "nvim-lua/plenary.nvim", "CRAG666/betterTerm.nvim" },
+  --   config = function()
+  --     require("configs.code_runner").setup()
+  --   end,
+  -- },
+  -- {
+  --   "CRAG666/betterTerm.nvim",
+  --   config = function()
+  --     require("configs.betterterm").setup()
+  --   end,
+  -- },
+  -- {
+  --   "nvim-lua/plenary.nvim",
+  -- },
 }
