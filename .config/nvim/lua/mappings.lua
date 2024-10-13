@@ -3,7 +3,6 @@
 local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
-map("i", "jk", "<ESC>")
 
 map("n", "<F5>", ":DapContinue<CR>", { noremap = true, silent = true, desc = "Start Debugging" })
 map("n", "<F10>", ":DapStepOver<CR>", { noremap = true, silent = true, desc = "Step Over" })
