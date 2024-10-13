@@ -25,6 +25,7 @@ return {
     config = function()
       require "configs.dap"
     end,
+    cmd = { "DapContinue", "DapStepOver", "DapStepInto", "DapStepOut", "DapToggleBreakpoint" },
   },
 
   {
