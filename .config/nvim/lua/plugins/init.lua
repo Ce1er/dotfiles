@@ -81,20 +81,18 @@ return {
       require("toggleterm").setup()
     end,
   },
-  -- {
-  --   "CRAG666/code_runner.nvim",
-  --   requires = { "nvim-lua/plenary.nvim", "CRAG666/betterTerm.nvim" },
-  --   config = function()
-  --     require("configs.code_runner").setup()
-  --   end,
-  -- },
-  -- {
-  --   "CRAG666/betterTerm.nvim",
-  --   config = function()
-  --     require("configs.betterterm").setup()
-  --   end,
-  -- },
-  -- {
-  --   "nvim-lua/plenary.nvim",
-  -- },
+  {
+    "mfussenegger/nvim-lint",
+    ft = "python", -- Load only with python files
+    config = function()
+      require("lint").linters_by_ft = {
+        python = { "mypy" },
+      }
+      vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+        callback = function()
+          require("lint").try_lint()
+        end,
+      })
+    end,
+  },
 }
