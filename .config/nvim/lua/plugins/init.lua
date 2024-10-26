@@ -10,4 +10,5 @@ return {
   require "configs.telescope-dap",
   require "configs.toggleterm",
   require "configs.treesitter",
+  require "configs.kitty-scrollback",
 }

@@ -1,4 +1,5 @@
 -- add yours here
+require "nvchad.mappings"
 
 local map = vim.keymap.set
 
@@ -11,4 +12,4 @@ map("n", "<F12>", ":DapStepOut<CR>", { noremap = true, silent = true, desc = "St
 map("n", "<Leader>B", ":DapToggleBreakpoint<CR>", { noremap = true, silent = true, desc = "Toggle Breakpoint" })
 -- map("n", "<Leader>u", dapui.toggle, { noremap = true, silent = true, desc = "Toggle DAP UI" }) set in configs/dapui.lua
 map("n", "<Leader>R", ":OverseerRun<CR>", { silent = true })
-map("n", "<F5>", ":OverseerRun Run<CR>", {silent=true})
+map("n", "<F5>", ":OverseerRun Run<CR>", { silent = true })
