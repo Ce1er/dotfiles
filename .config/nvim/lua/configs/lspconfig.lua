@@ -7,7 +7,12 @@ return {
     local lspconfig = require "lspconfig"
 
     -- EXAMPLE
-    local servers = { "html", "cssls", "pyright", "ruff" }
+    local servers = {
+      "cssls",
+      "html",
+      "pyright",
+      "ruff",
+    }
     local nvlsp = require "nvchad.configs.lspconfig"
 
     -- lsps with default config
