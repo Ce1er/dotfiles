@@ -67,6 +67,8 @@ Note: this requires `~/.config/wal/templates/colors-hyprland.conf`
 This script will change wofi, dunst and waybar configs based on pywal colourscheme. The colours affected are explained in `~/.config/wal/colour-locations.md`
 A colourscheme can be automatically generated for an image or defined manually and set with `wal --theme {path_to_colourscheme}`
 
+Where possible config files import colours from a file in `~/.cache/wal/*` if this is not possible then `~/.config/hypr/reload-configs.sh` will use a template config to create the actual config to be used with the colours currently set.
+
 ## Monitors
 Monitor setup is located in `~/.config/hypr/monitors/monitors.conf`.
 See [Hyprland Documentation](https://wiki.hyprland.org/Configuring/Monitors/) for information on how to set this up.
