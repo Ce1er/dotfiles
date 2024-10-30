@@ -5,9 +5,12 @@ return {
       "css",
       "html",
       "lua",
+      "luadoc",
+      "printf",
       "python",
       "vim",
       "vimdoc",
+      "xml",
     },
   },
 }
