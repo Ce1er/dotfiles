@@ -35,3 +35,13 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+-- autocmds
+
+-- clear search highlight when entering insert mode
+vim.api.nvim_create_autocmd({ "InsertEnter" }, {
+  pattern = "*",
+  callback = function()
+    vim.opt.hlsearch = false
+  end,
+})
