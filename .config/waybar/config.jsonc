@@ -43,11 +43,11 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
-    },
-    "custom/razer": {
-      "exec": "~/Sync/razer_battery.py",
-      "on-click": "polychromatic-controller",
-      "interval": 60,
-      "format": "{}  "
+    }
+//    "custom/razer": {
+ //     "exec": "~/Sync/razer_battery.py",
+  //    "on-click": "polychromatic-controller",
+   //   "interval": 60,
+    //  "format": "{}  "
     }
 }
