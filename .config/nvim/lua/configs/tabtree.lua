@@ -53,6 +53,21 @@ return {
         ]],
           offsets = {},
         },
+
+        markdown = { -- Only working for links
+          target_query = [[
+            (atx_heading) @heading
+            (setext_heading) @heading
+            (list_item) @list_item
+            (fenced_code_block) @code_block
+            (inline_code_block) @code_block
+            (pipe_table_cell) @table_cell
+            (link) @link
+            (strong_emphasis) @emphasis
+            (emphasis) @emphasis
+          ]],
+          offsets = {},
+        },
         --
         -- default_config = {
         --   target_query = [[
