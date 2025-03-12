@@ -17,4 +17,4 @@ else
   # cp ~/.cache/wal/colors.json ~/.config/wal/colorschemes/$base.json
 fi
 polychromatic-cli -d keyboard --zone main -c $(sed '2q;d' ~/.cache/wal/colors) -o static # In sed command number before q is the line to use
-~/.config/hypr/reload-configs.sh
+~/.config/hypr/scripts/reload-configs.sh
