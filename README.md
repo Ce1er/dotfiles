@@ -7,7 +7,7 @@ WORK IN PROGRESS: setup instructions are incomplete and setup instructions alrea
 All dependencies use names from arch linux's repositories (official and AUR). Other repositories will likely have similar names for projects that will probably work fine.
 AUR dependencies are installed using yay, you can use a different AUR helper or install those packages manually if desired.
 
-Warning: These are not general use configs. Some of them are specifically designed to work well with my hardware or other software that I use so some parts may not work without modification.
+Warning: These are not general use configs. Some of them are specifically designed to work well with my hardware or other software that I use so some parts may not work without modification. Some are kept up to date with breaking changes, some are not and are outdated.
 
 # General
 ```$ git clone https://github.com/Ce1er/dotfiles.git```
@@ -42,7 +42,7 @@ Wallpapers are chosen at random from `~/.config/hypr/current-wallpapers` these c
 
 `~/.config/hypr/choose-wallpapers.sh` is a script used to choose possible wallpapers based on gthumb tags. It can be invoked manually and will ask for "include words" which are the tags the images selected must have and "exclude words" which are the tags the image cannot have. It will then create symlinks in `~/.config/hypr/current-wallpapers/` to the original images.
 
-It looks for images in `~/Images/` and their tags in `~/Images/.comments`. Each image in `~/Images/` should have a corresponding file in `~/Images/.comments/`, this file will have the same name as the image but with `.xml` appended on the end.
+It looks for images in `~/Images/Wallpapers/` and their tags in `~/Images/Wallpapers/.comments`. Each image in `~/Images/Wallpapers/` should have a corresponding file in `~/Images/Wallpapers/.comments/`, this file will have the same name as the image but with `.xml` appended on the end.
 
 Example `.xml` file where tags are `digital-art` and `wallpaper`:
 ```xml
@@ -57,17 +57,20 @@ Example `.xml` file where tags are `digital-art` and `wallpaper`:
   </categories>
 </comment>
 ```
+This is used by gthumb which has a graphical method of changing the tags of an image.
 
 ## Colours
-Colours are generated with `~/.config/hypr/wallpaper.sh` using pywal. Pywal then creates `~/.cache/wal/colours-hyprland.conf`.
+Colours are generated with `~/.config/hypr/scripts/wallpaper.sh` using pywal. Pywal then creates `~/.cache/wal/colours-hyprland.conf`.
 
 Note: this requires `~/.config/wal/templates/colors-hyprland.conf`
 
 `~/.config/hypr/reload-configs.sh`
 This script will change wofi, dunst and waybar configs based on pywal colourscheme. The colours affected are explained in `~/.config/wal/colour-locations.md`
-A colourscheme can be automatically generated for an image or defined manually and set with `wal --theme {path_to_colourscheme}`
+A colourscheme can be automatically generated for an image or defined manually and set with `wal --theme {path_to_colourscheme}`. It is ran at the end of `~/.config/hypr/scripts/wallpaper.sh` but can also be invoked by itself.
 
 Where possible config files import colours from a file in `~/.cache/wal/*` if this is not possible then `~/.config/hypr/reload-configs.sh` will use a template config to create the actual config to be used with the colours currently set.
+
+`~/.config/hypr/scripts/automatic-colourschemes.sh` can be ran to generate colourschemes in `~/.config/wal/colorschemes/*.json`, it will do this for all files in `~/.config/hypr/current-wallpapers/*` These are named based on the image name so `foo.jpg` will be `~/.config/wal/colorschemes/foo.jpg.json`. Having these is useful as the colours can be altered manually if desired. If these files do not exist pywal will be used to generate the colourscheme and a permanent file will not be created. If a file is wanted for a specific image instead of all in `~/.config/hypr/current-wallpapers` then the commands `$ wal -ntseqni $file` and `$ cp ~/.cache/wal/colors.json ~/.config/wal/colorschemes/$file.json` can be ran.
 
 ## Monitors
 Monitor setup is located in `~/.config/hypr/monitors/monitors.conf`.
