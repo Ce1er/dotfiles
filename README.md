@@ -23,7 +23,7 @@ Required:
 ```# pacman -S hyprland```
 
 Optional:
-```# pacman -S dunst swww waybar python-pywal gthumb wayvnc```
+```# pacman -S dunst swww waybar python-pywal gthumb wayvnc kitty```
 ```$ yay -S polychromatic```
 ```
 dunst: notifications
@@ -33,6 +33,7 @@ python-pywal: set colours based on wallpaper
 polychromatic: sets lighting for razer devices
 gthumb: easy way to set tags for wallpapers
 wayvnc: use a second monitor through a vnc connection
+kitty: terminal emulator, if a different one is used some files in `~/.config/hypr/` need to be changed as using kitty is assumed
 ```
 
 ## Wallpaper
