@@ -10,7 +10,11 @@ AUR dependencies are installed using yay, you can use a different AUR helper or 
 Warning: These are not general use configs. Some of them are specifically designed to work well with my hardware or other software that I use so some parts may not work without modification. Some are kept up to date with breaking changes, some are not and are outdated.
 
 # General
-```$ git clone https://github.com/Ce1er/dotfiles.git```
+```
+$ git clone https://github.com/Ce1er/dotfiles.git
+$ git submodule init dotfiles
+$ git submodule update dotfiles
+```
 
 Warning: the following command may override files in `~/.config/` if they already exist, make sure you have a backup.
 
