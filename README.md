@@ -157,6 +157,11 @@ Nvchad: https://nvchad.com/docs/quickstart/install
 
 ## Setup
 
-1. Follow Nvchad installation instructions
-2. Override files in ~/.config/nvim/_ with the ones in dotfiles/.config/nvim/_
-3. Update Lazy and Mason
+## Update Lazy and Mason:
+
+`$ nvim`
+`:Lazy update`
+`:Mason`
+Search for wanted formatters/lsps/etc.
+The ones already set up to work after install are:
+`beautysh, black, css-lsp, debugpy, html-lsp, latexindent, lua-language-server, mypy, prettier, pyright, ruff, stylua`
