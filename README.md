@@ -10,6 +10,7 @@ AUR dependencies are installed using yay, you can use a different AUR helper or 
 Warning: These are not general use configs. Some of them are specifically designed to work well with my hardware or other software that I use so some parts may not work without modification. Some are kept up to date with breaking changes, some are not and are outdated.
 
 # General
+
 ```
 $ git clone https://github.com/Ce1er/dotfiles.git
 $ git submodule init dotfiles
@@ -18,17 +19,23 @@ $ git submodule update dotfiles
 
 Warning: the following command may override files in `~/.config/` if they already exist, make sure you have a backup.
 
-```$ cp -r dotfiles/.config/* ~/.config/ && cp dotfiles/*rc ~/```
+`$ cp -r dotfiles/.config/* ~/.config/ && cp dotfiles/*rc ~/`
+
+# Zsh
+
+`$ zcompile ~/.zshrc`
 
 # Hyprland
 
 ## Dependencies
+
 Required:
-```# pacman -S hyprland```
+`# pacman -S hyprland`
 
 Optional:
-```# pacman -S dunst swww waybar python-pywal gthumb wayvnc kitty```
-```$ yay -S polychromatic```
+`# pacman -S dunst swww waybar python-pywal gthumb wayvnc kitty`
+`$ yay -S polychromatic`
+
 ```
 dunst: notifications
 swww: wallpaper setter
@@ -41,6 +48,7 @@ kitty: terminal emulator, if a different one is used some files in `~/.config/hy
 ```
 
 ## Wallpaper
+
 Wallpapers are chosen at random from `~/.config/hypr/current-wallpapers` these can be images or symlinks to images.
 
 `~/.config/hypr/wallpaper.sh` is the script used to set a wallpaper and change colours of several different things to the colours pywal generates from the wallpaper. This script can be executed manually or with the default keyboard shortcut `Mod4+F2`
@@ -50,6 +58,7 @@ Wallpapers are chosen at random from `~/.config/hypr/current-wallpapers` these c
 It looks for images in `~/Images/Wallpapers/` and their tags in `~/Images/Wallpapers/.comments`. Each image in `~/Images/Wallpapers/` should have a corresponding file in `~/Images/Wallpapers/.comments/`, this file will have the same name as the image but with `.xml` appended on the end.
 
 Example `.xml` file where tags are `digital-art` and `wallpaper`:
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <comment version="3.0">
@@ -62,9 +71,11 @@ Example `.xml` file where tags are `digital-art` and `wallpaper`:
   </categories>
 </comment>
 ```
+
 This is used by gthumb which has a graphical method of changing the tags of an image.
 
 ## Colours
+
 Colours are generated with `~/.config/hypr/scripts/wallpaper.sh` using pywal. Pywal then creates `~/.cache/wal/colours-hyprland.conf`.
 
 Note: this requires `~/.config/wal/templates/colors-hyprland.conf`
@@ -78,16 +89,20 @@ Where possible config files import colours from a file in `~/.cache/wal/*` if th
 `~/.config/hypr/scripts/automatic-colourschemes.sh` can be ran to generate colourschemes in `~/.config/wal/colorschemes/*.json`, it will do this for all files in `~/.config/hypr/current-wallpapers/*` These are named based on the image name so `foo.jpg` will be `~/.config/wal/colorschemes/foo.jpg.json`. Having these is useful as the colours can be altered manually if desired. If these files do not exist pywal will be used to generate the colourscheme and a permanent file will not be created. If a file is wanted for a specific image instead of all in `~/.config/hypr/current-wallpapers` then the commands `$ wal -ntseqni $file` and `$ cp ~/.cache/wal/colors.json ~/.config/wal/colorschemes/$file.json` can be ran. To generate one for the current file this command can be used `$ cp ~/.cache/wal/colors.json ~/.config/wal/colorschemes/$(basename $(swww query | head -n 1 | awk '{print $8}')).json`
 
 ## Monitors
+
 Monitor setup is located in `~/.config/hypr/monitors/monitors.conf`.
 See [Hyprland Documentation](https://wiki.hyprland.org/Configuring/Monitors/) for information on how to set this up.
 
 ### Wayvnc
+
 Used to have a second monitor over a VNC connection.
 
 #### Dependencies
-```# pacman -S wayvnc```
+
+`# pacman -S wayvnc`
 
 #### Setup
+
 Add a username and password to `~/.config/wayvnc/config`
 
 Generate a key pair with openssl
@@ -97,12 +112,14 @@ Start wayvnc with `~/.config/hypr/headless-monitor.sh` this script can be invoke
 # Qtile
 
 ## Dependencies
+
 Required:
-```# pacman -S qtile xorg```
+`# pacman -S qtile xorg`
 Not all packages from the xorg virtual package are required however I have not tested which ones are necessary.
 Optional:
-```# pacman -S feh picom dunst rofi kitty python-iwlib```
-```$ yay -S qtile-extras```
+`# pacman -S feh picom dunst rofi kitty python-iwlib`
+`$ yay -S qtile-extras`
+
 ```
 feh: wallpaper tool
 picom: transparent windows
@@ -114,26 +131,32 @@ python-iwlib: wifi info in bar
 ```
 
 ## Setup
+
 In `~/.config/qtile/config.py/` change default apps. These can be found under the heading:
+
 ```
 # --------------------------------------------------------
 # Set default apps
 # --------------------------------------------------------
 ```
+
 Having a terminal is required, an app launcher is highly recommended. browser and file_manager are optional although most users will use them.
 
 # TODO
-* Setup instructions for all configs that do not work out of the box
-* Add files that are linked to
-* Change shebangs to use `/usr/bin/env`
-* Change all file paths to `~/` if username is specified
+
+- Setup instructions for all configs that do not work out of the box
+- Add files that are linked to
+- Change shebangs to use `/usr/bin/env`
+- Change all file paths to `~/` if username is specified
 
 # Neovim
 
 ## Dependencies
+
 Nvchad: https://nvchad.com/docs/quickstart/install
 
 ## Setup
+
 1. Follow Nvchad installation instructions
-2. Override files in ~/.config/nvim/* with the ones in dotfiles/.config/nvim/*
+2. Override files in ~/.config/nvim/_ with the ones in dotfiles/.config/nvim/_
 3. Update Lazy and Mason
