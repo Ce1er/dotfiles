@@ -1,11 +1,13 @@
 # dotfiles
 
-The `$` symbol is used to show a command that should be run. `#` indicates that this command should be run as root.
+The `$` symbol is used to show a command that should be run. `#` indicates that this command should be run as root using sudo, su, doas or similar.
 
 WORK IN PROGRESS: setup instructions are incomplete and setup instructions already presented have not all been tested so don't expect them to work without fixing issues yourself.
 
 All dependencies use names from arch linux's repositories (official and AUR). Other repositories will likely have similar names for projects that will probably work fine.
 AUR dependencies are installed using yay, you can use a different AUR helper or install those packages manually if desired.
+Gentoo dependencies will be added soon. Required USE flags may not be the most minimal possible, they will be based on my preferences.
+Where possible systemd and openrc instructions will be seperated.
 
 Warning: These are not general use configs. Some of them are specifically designed to work well with my hardware or other software that I use so some parts may not work without modification. Some are kept up to date with breaking changes, some are not and are outdated.
 
@@ -23,6 +25,7 @@ Warning: the following command may override files in `~/.config/` if they alread
 
 # Zsh
 
+## Optional: PERF
 `$ zcompile ~/.zshrc`
 
 # Hyprland
@@ -33,7 +36,7 @@ Required:
 `# pacman -S hyprland`
 
 Optional:
-`# pacman -S dunst swww waybar python-pywal gthumb wayvnc kitty`
+`# pacman -S dunst swww waybar python-pywal gthumb wayvnc kitty xdg-desktop-portal-hyprland`
 `$ yay -S polychromatic`
 
 ```
@@ -45,6 +48,8 @@ polychromatic: sets lighting for razer devices
 gthumb: easy way to set tags for wallpapers
 wayvnc: use a second monitor through a vnc connection
 kitty: terminal emulator, if a different one is used some files in `~/.config/hypr/` need to be changed as using kitty is assumed
+xdg-desktop-portal-hyprland: other desktop portals would mostly work but this is recommended 
+seatd: if using openrc system. elogind would also work.
 ```
 
 ## Wallpaper
@@ -165,3 +170,6 @@ Nvchad: https://nvchad.com/docs/quickstart/install
 Search for wanted formatters/lsps/etc.
 The ones already set up to work after install are:
 `beautysh, black, css-lsp, debugpy, html-lsp, latexindent, lua-language-server, mypy, prettier, pyright, ruff, stylua`
+
+## Optional: PERF
+compile lua files
