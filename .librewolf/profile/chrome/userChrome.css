@@ -1,0 +1,14 @@
+/*Hide tabs on toolbar*/
+#TabsToolbar {
+  visibility: collapse;
+}
+
+/*Hide titlebar*/
+#titlebar {
+  visibility: collapse;
+}
+
+/*Hide header of 'Tree Style Tab'-Addon*/
+#sidebar-header {
+  visibility: collapse !important;
+}
