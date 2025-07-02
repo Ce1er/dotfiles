@@ -23,7 +23,14 @@ require("lazy").setup({
   },
 
   { import = "plugins" },
-}, lazy_config)
+}, {
+  performance = {
+    rtp = {
+      paths = { "/usr/share/vim/vimfiles" },
+    },
+  },
+  lazy_config,
+})
 
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")

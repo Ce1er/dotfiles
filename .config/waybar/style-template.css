@@ -17,6 +17,7 @@ window#waybar {
 .modules-right {
   background-color: @background;
   margin: 2px 10px 0 0;
+  padding: 0 10px;
 }
 .modules-center {
   background-color: @background;
@@ -24,6 +25,7 @@ window#waybar {
 }
 .modules-left {
   margin: 2px 0 0 5px;
+  padding: 0 5px;
   background-color: @background;
 }
 /*-----modules indv----*/
@@ -31,13 +33,18 @@ window#waybar {
   padding: 1px 5px;
   background-color: transparent;
 }
+
 #workspaces button:hover {
   box-shadow: inherit;
   background-color: @color3;
 }
 
-#workspaces button.active {
+#workspaces button.visible {
   background-color: @color3;
+}
+
+#workspaces button.active {
+  background-color: @color4;
 }
 
 #clock,

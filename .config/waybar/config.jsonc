@@ -1,53 +1,89 @@
 {
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock"],
-    /* "modules-right": ["tray", "custom/scratchpad-indicator", "pulseaudio", "custom/power"], */
-    "modules-right": ["network", "tray", "pulseaudio", "custom/razer"],
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  /* "modules-right": ["tray", "custom/scratchpad-indicator", "pulseaudio", "custom/power"], */
+  "modules-right": [
+    "custom/nvidia",
+    "cpu",
+    "memory",
+    "network",
+    "tray",
+    "pulseaudio",
+  ],
 
-    "hyprland/workspaces": {
-      "all-outputs": "true",
-      "move-to-monitor": "true",
-      "format": "{name}"
+  "hyprland/workspaces": {
+    "all-outputs": "true",
+    "move-to-monitor": "true",
+    "format": "{name} {windows}",
+    "persistent-workspaces": {
+      "*": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     },
 
-    "network": {
-        "interface": "wlan0",
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ifname} ",
-        "format-disconnected": "", 
-        "max-length": 50,
-        "on-click": "kitty -e 'nmtui'"
+    "window-rewrite-default": "",
+    // https://www.nerdfonts.com/cheat-sheet
+    "window-rewrite": {
+      "class<.*qbittorrent.*>": "",
+      "title<.*youtube.*>": "", // Windows whose titles contain "youtube"
+      "class<librewolf>": "", // Windows whose classes are "firefox"
+      "class<librewolf> title<.*github.*>": "", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
+      "kitty": "", // Windows that contain "foot" in either class or title. For optimization reasons, it will only match against a title if at least one other window explicitly matches against a title.
+      "class<steam>": "",
     },
-    "tray": {
-        "icon-size": 15,
-        "spacing": 10
+  },
+
+  "custom/nvidia": {
+    "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,nounits,noheader",
+    "format": "{}% 󰍹",
+    "max-length": 10,
+    "interval": 2,
+  },
+
+  "cpu": {
+    "interval": 2,
+    "format": "{usage}% 󰍛",
+    "max-length": 10,
+    "on-click": "kitty -e btop",
+  },
+
+  "memory": {
+    "interval": 2,
+    "format": "{percentage}% 󰧑",
+    "max-length": 10,
+    "on-click": "kitty -e btop",
+  },
+
+  "network": {
+    "interface": "wlan0",
+    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-ethernet": "{ifname} ",
+    "format-disconnected": "",
+    "max-length": 50,
+    "on-click": "kitty -e 'nmtui'",
+  }, // Currently thinks it is always disconnected
+  "tray": {
+    "icon-size": 15,
+    "spacing": 10,
+  },
+  "clock": {
+    // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    // "format-alt": "{:%Y-%m-%d}"
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon} ",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": "0% {icon} ",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""],
     },
-    "clock": {
-        // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        // "format-alt": "{:%Y-%m-%d}"
-    },
-    "pulseaudio": {
-        "format": "{volume}% {icon} ",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": "0% {icon} ",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol"
-    }
-//    "custom/razer": {
- //     "exec": "~/Sync/razer_battery.py",
-  //    "on-click": "polychromatic-controller",
-   //   "interval": 60,
-    //  "format": "{}  "
-    }
+    "on-click": "pavucontrol",
+  },
 }
