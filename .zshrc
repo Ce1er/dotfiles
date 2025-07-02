@@ -70,11 +70,13 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(archlinux colorize colored-man-pages copyfile copypath cp emoji extract fzf man sudo themes vi-mode z zoxide)
+plugins=(colorize colored-man-pages copyfile copypath cp emoji extract fzf vi-mode fzf-tab-completion)
+# TODO: make fzf tab comp work
 
 ZSH_COLORIZE_TOOL=pygmentize
 
 source $ZSH/oh-my-zsh.sh
+source /etc/bash/bashrc.d/command-not-found.sh
 
 # User configuration
 
@@ -90,19 +92,21 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='nvim'
 # fi
 export EDITOR='nvim'
+export PAGER=less
+export MANPAGER='nvim +Man!'
 export GTK_THEME=Adwaita:dark
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias c='clear'
-alias nv='sudo -Es nvim'
+# alias nv='sudo -Es nvim'
 alias nf='neofetch'
 alias gb='setxkbmap gb'
 alias razer='openrazer-daemon -r'
 alias e='exit'
 alias sd='shutdown'
 # Compilation flags
-# export ARCHFLAGS="-arch $(uname -m)"
+export ARCHFLAGS="-arch $(uname -m)"
 
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh

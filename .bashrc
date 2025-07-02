@@ -13,6 +13,5 @@ alias e='exit'
 alias sd='shutdown'
 PS1='[\u@\h \W]\$ '
 
-eval "$(thefuck --alias)"
 
 export GTK_THEME=Adwaita:dark
