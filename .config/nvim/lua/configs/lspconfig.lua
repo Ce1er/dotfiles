@@ -2,7 +2,7 @@ return {
   "neovim/nvim-lspconfig",
   config = function()
     -- load defaults i.e lua_lsp
-    require("nvchad.configs.lspconfig").defaults()
+    require("nvchad.configs.lspconfig").defaults() -- broken
 
     local lspconfig = require "lspconfig"
 
@@ -12,6 +12,8 @@ return {
       "html",
       "pyright",
       "ruff",
+      "lemminx",
+      "taplo",
     }
     local nvlsp = require "nvchad.configs.lspconfig"
 

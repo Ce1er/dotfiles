@@ -19,7 +19,7 @@ dunst_config="$HOME/.config/dunst/dunstrc"
 
 cat "$waybar_colors" "$waybar_template" > "$waybar_config"
 
-cat "$waybar_colors" "$wofi_template" > "$wofi_config"
+cat "$waybar_colors" "$wofi_template" > "$wofi_config" &
 
 source "$HOME/.cache/wal/colors.sh"
 

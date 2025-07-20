@@ -40,8 +40,9 @@ return {
     -- Minimum width to use for headings when width is 'block'
     -- Can also be a list of integers in which case the 'level' is used to index into the list using a clamp
     min_width = 0,
+
     -- Determines if a border is added above and below headings
-    border = false,
+    border = true,
     -- Always use virtual lines for heading borders instead of attempting to use empty lines
     border_virtual = false,
     -- Highlight the start of the border using the foreground highlight
@@ -331,7 +332,7 @@ return {
 
   sign = {
     -- Turn on / off sign rendering
-    enabled = true,
+    enabled = false,
     -- Applies to background of sign text
     highlight = "RenderMarkdownSign",
   },
@@ -340,7 +341,7 @@ return {
   -- level of the heading. Indenting starts from level 2 headings onward.
   indent = {
     -- Turn on / off org-indent-mode
-    enabled = false,
+    enabled = true,
     -- Amount of additional padding added for each heading level
     per_level = 2,
     -- Heading levels <= this value will not be indented
@@ -348,5 +349,21 @@ return {
     skip_level = 1,
     -- Do not indent heading titles, only the body
     skip_heading = false,
+
+    render_modes = false,
+    icon = "▎",
+    highlight = "RenderMarkdownIndent",
   },
+
+  -- Needs latex2text to be installed
+  -- And a latex parser
+  -- latex = {
+  --   enabled = true,
+  --   render_modes = false,
+  --   converter = "latex2text",
+  --   highlight = "RenderMarkdownMath",
+  --   position = "above",
+  --   top_pad = 0,
+  --   bottom_pad = 0,
+  -- },
 }
