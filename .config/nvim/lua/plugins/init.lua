@@ -60,6 +60,28 @@ return {
   require "configs.render-markdown",
   -- }}}
 
+  -- Mason {{{
+  require "configs.mason",
+  -- }}}
+
+  require "configs.cmp",
+
+  require "configs.luasnip",
+
+  require "configs.menu",
+
+  require "configs.telescope",
+
+  require "configs.minty",
+
+  require "configs.autopairs",
+
+  require "configs.which-key",
+
+  require "configs.gitsigns",
+
+  require "configs.comment",
+
   -- nio {{{
   -- async IO, used by nvim-dap-ui
   require "configs.nio",
