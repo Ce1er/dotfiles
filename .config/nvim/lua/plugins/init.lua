@@ -42,7 +42,7 @@ return {
   -- Linters
   require "configs.lint",
   -- }}}
-
+  
   -- Lsp {{{
   -- Lsp
   require "configs.lspconfig",
@@ -66,7 +66,6 @@ return {
 
   require "configs.cmp",
 
-  require "configs.luasnip",
 
   require "configs.menu",
 
@@ -74,7 +73,6 @@ return {
 
   require "configs.minty",
 
-  require "configs.autopairs",
 
   require "configs.which-key",
 
