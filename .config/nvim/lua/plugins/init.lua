@@ -80,6 +80,8 @@ return {
 
   require "configs.comment",
 
+  require "configs.noice",
+
   -- nio {{{
   -- async IO, used by nvim-dap-ui
   require "configs.nio",

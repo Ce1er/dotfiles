@@ -1,108 +1,66 @@
 return {
-  "hrsh7th/nvim-cmp",
-  event = "InsertEnter",
+  "Saghen/blink.cmp",
+  version = "v0.*",
+  -- !Important! Make sure you're using the latest release of LuaSnip
+  -- `main` does not work at the moment
   dependencies = {
-    {
-      -- snippet plugin
-      "L3MON4D3/LuaSnip",
-      dependencies = { "rafamadriz/friendly-snippets" },
-      opts = { history = true, updateevents = "TextChanged,TextChangedI" },
-      version = "v2.*",
-      build = "make install_jsregexp",
-      config = function(_, opts)
-        require("luasnip").config.set_config(opts)
-        -- vscode format
-        require("luasnip.loaders.from_vscode").lazy_load()
+    "L3MON4D3/LuaSnip",
+    version = "v2.*",
+    dependencies = "rafamadriz/friendly-snippets",
+    build = "make install_jsregexp",
+    config = function()
+      require("luasnip.loaders.from_vscode").lazy_load()
 
-        -- snipmate format
-        require("luasnip.loaders.from_snipmate").load()
-
-        -- lua format
-        require("luasnip.loaders.from_lua").load()
-      end,
+      history = true
+      updateevents = "TextChanged,TextChangedI"
+    end,
+  },
+  opts = {
+    snippets = {
+      preset = "luasnip",
+      -- expand = function(snippet)
+      --   require("luasnip").lsp_expand(snippet)
+      -- end,
+      -- active = function(filter)
+      --   if filter and filter.direction then
+      --     return require("luasnip").jumpable(filter.direction)
+      --   end
+      --   return require("luasnip").in_snippet()
+      -- end,
+      -- jump = function(direction)
+      --   require("luasnip").jump(direction)
+      -- end,
     },
-
-    -- autopairing of (){}[] etc
-    {
-      "windwp/nvim-autopairs",
-      opts = {
-        fast_wrap = {},
-        disable_filetype = { "TelescopePrompt", "vim" },
-      },
-      config = function(opts)
-        require("nvim-autopairs").setup(opts)
-
-        -- setup cmp for autopairs
-        local cmp_autopairs = require "nvim-autopairs.completion.cmp"
-        require("cmp").event:on("confirm_done", cmp_autopairs.on_confirm_done())
-      end,
+    sources = {
+      default = { "lsp", "path", "buffer", "snippets" },
     },
+    signature = { enabled = true },
+  },
+  keymap = {
+    -- set to 'none' to disable the 'default' preset
+    preset = "none",
+    ["<C-space>"] = { "show", "show_documentation", "hide_documentation" }, -- TODO: make default
+    ["<C-e>"] = { "hide" },
+    ["<C-y>"] = { "select_and_accept" },
 
-    -- cmp sources plugins
-    {
-      "saadparwaiz1/cmp_luasnip",
-      "hrsh7th/cmp-nvim-lua",
-      "hrsh7th/cmp-nvim-lsp",
-      "hrsh7th/cmp-buffer",
-      "https://codeberg.org/FelipeLema/cmp-async-path.git",
-    },
+    ["<Up>"] = { "select_prev", "fallback" },
+    ["<Down>"] = { "select_next", "fallback" },
+    ["<C-p>"] = { "select_prev", "fallback_to_mappings" },
+    ["<C-n>"] = { "select_next", "fallback_to_mappings" },
+
+    ["<C-b>"] = { "scroll_documentation_up", "fallback" },
+    ["<C-f>"] = { "scroll_documentation_down", "fallback" },
+
+    ["<Tab>"] = { "snippet_forward", "fallback" },
+    ["<S-Tab>"] = { "snippet_backward", "fallback" },
+
+    ["<C-k>"] = { "show_signature", "hide_signature", "fallback" },
   },
 
-  opts = function()
-    -- dofile(vim.g.base46_cache .. "cmp")
-
-    local cmp = require "cmp"
-
-    local options = {
-      completion = { completeopt = "menu,menuone" },
-
-      snippet = {
-        expand = function(args)
-          require("luasnip").lsp_expand(args.body)
-        end,
-      },
-
-      mapping = {
-        ["<C-p>"] = cmp.mapping.select_prev_item(),
-        ["<C-n>"] = cmp.mapping.select_next_item(),
-        ["<C-d>"] = cmp.mapping.scroll_docs(-4),
-        ["<C-f>"] = cmp.mapping.scroll_docs(4),
-        ["<C-Space>"] = cmp.mapping.complete(),
-        ["<C-e>"] = cmp.mapping.close(),
-
-        ["<CR>"] = cmp.mapping.confirm {
-          behavior = cmp.ConfirmBehavior.Insert,
-          select = true,
-        },
-
-        ["<Tab>"] = cmp.mapping(function(fallback)
-          if cmp.visible() then
-            cmp.select_next_item()
-          elseif require("luasnip").expand_or_jumpable() then
-            require("luasnip").expand_or_jump()
-          else
-            fallback()
-          end
-        end, { "i", "s" }),
-
-        ["<S-Tab>"] = cmp.mapping(function(fallback)
-          if cmp.visible() then
-            cmp.select_prev_item()
-          elseif require("luasnip").jumpable(-1) then
-            require("luasnip").jump(-1)
-          else
-            fallback()
-          end
-        end, { "i", "s" }),
-      },
-
-      sources = {
-        { name = "nvim_lsp" },
-        { name = "luasnip" },
-        { name = "buffer" },
-        { name = "nvim_lua" },
-        { name = "async_path" },
-      },
-    }
-  end,
+  completion = {
+    documentation = { -- does not work
+      auto_show = true,
+      auto_show_delay_ms = 500,
+    },
+  },
 }
