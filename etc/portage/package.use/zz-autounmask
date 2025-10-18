@@ -1,0 +1,739 @@
+# required by net-misc/networkmanager-1.48.10-r1::gentoo[-iwd,wifi]
+# required by net-misc/networkmanager (argument)
+>=net-wireless/wpa_supplicant-2.10-r6 dbus
+# required by sys-kernel/gentoo-kernel-6.12.16::gentoo[initramfs]
+# required by virtual/dist-kernel-6.12.16::gentoo
+# required by sys-firmware/intel-microcode-20250211_p20250211::gentoo
+# required by sys-firmware/intel-microcode (argument)
+>=sys-kernel/installkernel-50 dracut
+# required by media-libs/mesa-24.3.4-r1::gentoo
+# required by x11-libs/gtk+-3.24.48::gentoo[wayland]
+# required by x11-themes/adwaita-icon-theme-legacy-46.2::gentoo
+# required by x11-themes/adwaita-icon-theme-46.2::gentoo
+>=media-libs/libglvnd-1.7.0 X
+# required by x11-libs/gtk+-3.24.48::gentoo
+# required by x11-themes/adwaita-icon-theme-legacy-46.2::gentoo
+# required by x11-themes/adwaita-icon-theme-46.2::gentoo
+>=x11-libs/cairo-1.18.2-r1 X
+# required by dev-cpp/gtkmm-3.24.9::gentoo
+# required by gui-apps/waybar-0.11.0-r1::gentoo
+# required by gui-apps/waybar (argument)
+# required by app-emulation/libvirt-10.10.0-r1::gentoo[virt-network]
+# required by app-emulation/libvirt-glib-5.0.0::gentoo
+# required by app-emulation/virt-manager-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager (argument)
+>=net-dns/dnsmasq-2.90 script
+# required by app-crypt/swtpm-0.10.0::gentoo
+# required by app-emulation/libvirt-10.10.0-r1::gentoo[qemu]
+# required by app-emulation/libvirt-glib-5.0.0::gentoo
+# required by app-emulation/virt-manager-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager (argument)
+>=net-libs/gnutls-3.8.9-r1 tools pkcs11
+# required by dev-qt/qtwayland-6.8.2-r1::gentoo
+>=dev-qt/qtbase-6.8.2-r2 opengl
+# required by dev-python/pyqt6-webengine-6.8.0::gentoo
+# required by sys-apps/polychromatic-0.9.3::gentoo[python_single_target_python3_12]
+# required by sys-apps/polychromatic (argument)
+>=dev-python/pyqt6-6.8.1 svg webchannel
+# required by dev-python/pyqt6-webengine-6.8.0::gentoo
+# required by sys-apps/polychromatic-0.9.3::gentoo[python_single_target_python3_12]
+# required by sys-apps/polychromatic (argument)
+>=dev-qt/qtwebengine-6.8.2-r1 opengl
+# required by dev-qt/qttools-6.8.2::gentoo
+# required by net-p2p/qbittorrent-5.0.3::gentoo
+# required by net-p2p/qbittorrent (argument)
+>=dev-qt/qtbase-6.8.2-r2 -opengl
+# required by dev-qt/qtbase-6.8.2-r2::gentoo[wayland]
+# required by dev-qt/qtsvg-6.8.2::gentoo
+# required by net-p2p/qbittorrent-5.0.3::gentoo[gui]
+# required by net-p2p/qbittorrent (argument)
+>=dev-qt/qtwayland-6.8.2-r1 vulkan
+# required by dev-qt/qtwebengine-6.8.2-r1::gentoo
+# required by dev-python/pyqt6-webengine-6.8.0::gentoo
+# required by sys-apps/polychromatic-0.9.3::gentoo[python_single_target_python3_12]
+# required by sys-apps/polychromatic (argument)
+>=dev-qt/qtbase-6.8.2-r2 opengl
+# required by dev-qt/qtdeclarative-6.8.2::gentoo
+# required by dev-qt/qtwebengine-6.8.2-r1::gentoo
+# required by dev-python/pyqt6-webengine-6.8.0::gentoo
+# required by sys-apps/polychromatic-0.9.3::gentoo[python_single_target_python3_12]
+# required by sys-apps/polychromatic (argument)
+=dev-qt/qtbase-6.8.2-r2 -vulkan
+# required by dev-qt/qtwayland-6.8.2-r1::gentoo
+=dev-qt/qtbase-6.8.2-r2 vulkan
+# required by dev-qt/qtdeclarative-6.8.2::gentoo
+# required by dev-qt/qtwebengine-6.8.2-r1::gentoo
+# required by dev-python/pyqt6-webengine-6.8.0::gentoo
+# required by sys-apps/polychromatic-0.9.3::gentoo[python_single_target_python3_12]
+# required by sys-apps/polychromatic (argument)
+=dev-qt/qtbase-6.8.2-r2 -vulkan
+# required by dev-qt/qtwayland-6.8.2-r1::gentoo
+=dev-qt/qtbase-6.8.2-r2 vulkan
+# required by dev-qt/qtwayland-5.15.16-r1::gentoo
+>=dev-qt/qtgui-5.15.16 egl
+# required by kde-frameworks/kirigami-6.10.0::gentoo
+# required by kde-frameworks/qqc2-desktop-style-6.10.0::gentoo
+# required by gui-libs/hyprland-qtutils-0.1.1::gentoo
+# required by gui-wm/hyprland-0.46.2-r1::gentoo[qtutils]
+# required by gui-wm/hyprland (argument)
+>=dev-qt/qt5compat-6.8.2-r1 qml
+# required by media-gfx/gimp-2.10.38-r1::gentoo
+# required by media-gfx/gimp (argument)
+>=media-libs/gegl-0.4.48 cairo
+# required by net-misc/ytfzf-2.6.2::gentoo[-minimal]
+# required by net-misc/ytfzf (argument)
+>=media-video/mpv-0.39.0-r1 -vdpau
+# required by app-portage/pfl-3.5.3::gentoo[network-cron]
+# required by app-portage/pfl (argument)
+>=sys-apps/util-linux-2.40.4 caps
+# required by x11-misc/pywal-3.3.0::guru
+# required by pywal (argument)
+>=media-gfx/imagemagick-7.1.1.38-r2 jpeg
+# required by games-util/steam-launcher-1.0.0.82-r1::steam-overlay[video_cards_nvidia]
+# required by games-util/steam-launcher (argument)
+>=x11-drivers/nvidia-drivers-570.124.04 abi_x86_32
+# required by x11-drivers/nvidia-drivers-570.124.04::gentoo[wayland]
+# required by games-util/steam-launcher-1.0.0.82-r1::steam-overlay[video_cards_nvidia]
+# required by games-util/steam-launcher (argument)
+>=gui-libs/egl-gbm-1.1.2.1 abi_x86_32
+# required by x11-drivers/nvidia-drivers-570.124.04::gentoo[wayland]
+# required by games-util/steam-launcher-1.0.0.82-r1::steam-overlay[video_cards_nvidia]
+# required by games-util/steam-launcher (argument)
+>=gui-libs/egl-wayland-1.1.18 abi_x86_32
+# required by x11-drivers/nvidia-drivers-570.124.04::gentoo[wayland,X]
+# required by games-util/steam-launcher-1.0.0.82-r1::steam-overlay[video_cards_nvidia]
+# required by games-util/steam-launcher (argument)
+>=gui-libs/egl-x11-1.0.0 abi_x86_32
+# required by media-libs/mesa-24.3.4-r1::gentoo
+# required by gui-libs/egl-gbm-1.1.2.1::gentoo
+# required by x11-drivers/nvidia-drivers-570.124.04::gentoo[wayland]
+# required by games-util/steam-launcher-1.0.0.82-r1::steam-overlay[video_cards_nvidia]
+# required by games-util/steam-launcher (argument)
+>=dev-util/spirv-tools-1.4.304.0 abi_x86_32
+# required by sys-libs/pam-1.7.0_p20241230-r3::gentoo[-berkdb]
+# required by sys-apps/util-linux-2.40.4::gentoo[pam]
+# required by sys-apps/systemd-utils-255.15-r1::gentoo[udev]
+# required by virtual/libudev-251-r2::gentoo[-systemd]
+# required by sys-libs/libudev-compat-186-r1::gentoo
+# required by games-util/steam-launcher-1.0.0.82-r1::steam-overlay
+# required by games-util/steam-launcher (argument)
+>=sys-libs/gdbm-1.24 abi_x86_32
+# required by sys-libs/gdbm-1.24::gentoo[readline]
+# required by sys-libs/pam-1.7.0_p20241230-r3::gentoo[-berkdb]
+# required by sys-apps/util-linux-2.40.4::gentoo[pam]
+# required by sys-apps/systemd-utils-255.15-r1::gentoo[udev]
+# required by virtual/libudev-251-r2::gentoo[-systemd]
+# required by sys-libs/libudev-compat-186-r1::gentoo
+# required by games-util/steam-launcher-1.0.0.82-r1::steam-overlay
+# required by games-util/steam-launcher (argument)
+>=sys-libs/readline-8.2_p13-r1 abi_x86_32
+# required by games-util/lutris-0.5.19::gentoo
+# required by games-util/lutris (argument)
+>=x11-libs/gdk-pixbuf-2.42.12 jpeg
+# required by net-libs/gnutls-3.8.9-r1::gentoo[pkcs11]
+# required by app-emulation/qemu-9.1.2::gentoo[gnutls]
+# required by app-emulation/libvirt-10.10.0-r1::gentoo[qemu]
+# required by app-emulation/libvirt-glib-5.0.0::gentoo
+# required by app-emulation/virt-manager-5.0.0-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=app-crypt/p11-kit-0.25.5 abi_x86_32
+# required by dev-libs/nss-3.101.2::gentoo
+# required by net-misc/networkmanager-1.48.10-r1::gentoo[nss]
+# required by @selected
+# required by @world (argument)
+>=dev-db/sqlite-3.47.2-r1 abi_x86_32
+# required by app-emulation/wine-vanilla (argument)
+>=app-emulation/wine-vanilla-10.0-r1 -abi_x86_32
+# required by app-emulation/wine-proton-9.0.4-r1::gentoo[gstreamer]
+# required by virtual/wine-0-r10::gentoo
+# required by app-emulation/winetricks-20240105-r1::gentoo
+# required by winetricks (argument)
+>=media-libs/gst-plugins-base-1.24.11 abi_x86_32
+# required by app-emulation/wine-proton-9.0.4-r1::gentoo[gstreamer]
+# required by virtual/wine-0-r10::gentoo
+# required by app-emulation/winetricks-20240105-r1::gentoo
+# required by winetricks (argument)
+>=media-libs/gstreamer-1.24.11 abi_x86_32
+# required by app-emulation/wine-proton-9.0.4-r1::gentoo[unwind,-llvm-libunwind]
+# required by virtual/wine-0-r10::gentoo
+# required by app-emulation/winetricks-20240105-r1::gentoo
+# required by winetricks (argument)
+>=sys-libs/libunwind-1.8.1 abi_x86_32
+# required by app-emulation/wine-proton-9.0.4-r1::gentoo[gstreamer]
+# required by virtual/wine-0-r10::gentoo
+# required by app-emulation/winetricks-20240105-r1::gentoo
+# required by winetricks (argument)
+>=media-plugins/gst-plugins-meta-1.24.11 abi_x86_32
+# required by media-libs/gst-plugins-base-1.24.11::gentoo[orc]
+# required by app-emulation/wine-vanilla-10.0-r1::gentoo[gstreamer]
+# required by app-emulation/wine-vanilla (argument)
+>=dev-lang/orc-0.4.40-r1 abi_x86_32
+# required by media-libs/gst-plugins-base-1.24.11::gentoo[X]
+# required by app-emulation/wine-vanilla-10.0-r1::gentoo[gstreamer]
+# required by app-emulation/wine-vanilla (argument)
+>=x11-libs/libXv-1.0.13 abi_x86_32
+# required by media-libs/gst-plugins-base-1.24.11::gentoo[opengl,gles2]
+# required by app-emulation/wine-vanilla-10.0-r1::gentoo[gstreamer]
+# required by app-emulation/wine-vanilla (argument)
+>=media-libs/graphene-1.10.8-r1 abi_x86_32
+# required by media-plugins/gst-plugins-pulse-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[pulseaudio]
+# required by app-emulation/wine-proton-9.0.4-r1::gentoo[gstreamer]
+# required by virtual/wine-0-r10::gentoo
+# required by app-emulation/winetricks-20240105-r1::gentoo
+# required by winetricks (argument)
+>=media-libs/gst-plugins-good-1.24.11 abi_x86_32
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[pulseaudio]
+# required by app-emulation/wine-proton-9.0.4-r1::gentoo[gstreamer]
+# required by virtual/wine-0-r10::gentoo
+# required by app-emulation/winetricks-20240105-r1::gentoo
+# required by winetricks (argument)
+>=media-plugins/gst-plugins-pulse-1.24.11 abi_x86_32
+# required by kde-frameworks/qqc2-desktop-style-6.10.0::gentoo
+# required by @__auto_slot_operator_replace_installed__ (argument)
+=dev-qt/qtdeclarative-6.8.2 -opengl -vulkan
+# required by dev-qt/qtdeclarative-6.8.2::gentoo
+# required by kde-frameworks/kguiaddons-6.10.0::gentoo
+# required by kde-frameworks/kcolorscheme-6.10.0::gentoo
+# required by kde-frameworks/kiconthemes-6.10.0::gentoo
+# required by kde-frameworks/qqc2-desktop-style-6.10.0::gentoo
+# required by gui-libs/hyprland-qtutils-0.1.1::gentoo
+# required by gui-wm/hyprland-0.46.2-r1::gentoo[qtutils]
+# required by @selected
+# required by @world (argument)
+=dev-qt/qtbase-6.8.2-r2 -opengl -vulkan
+# required by kde-frameworks/qqc2-desktop-style-6.10.0::gentoo
+# required by @__auto_slot_operator_replace_installed__ (argument)
+=dev-qt/qtdeclarative-6.8.2 vulkan opengl
+# required by dev-qt/qtdeclarative-6.8.2::gentoo
+# required by kde-frameworks/qqc2-desktop-style-6.10.0::gentoo
+# required by @__auto_slot_operator_replace_installed__ (argument)
+=dev-qt/qtbase-6.8.2-r2 vulkan opengl
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/beautifulsoup4-4.13.3 python_targets_python3_11
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/cbor2-5.6.5 python_targets_python3_11
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/chardet-5.2.0 python_targets_python3_11
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/cloudscraper-1.2.69 python_targets_python3_11
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/html5lib-1.1-r2 python_targets_python3_11
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/lxml-5.3.1 python_targets_python3_11
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/numpy-2.2.4 python_targets_python3_11
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/pillow-11.1.0 lcms python_targets_python3_11
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/psutil-7.0.0 python_targets_python3_11
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/pyopenssl-25.0.0 python_targets_python3_11
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/python-mpv-1.0.7 python_targets_python3_11
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/pyyaml-6.0.2 python_targets_python3_11
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/requests-2.32.3 python_targets_python3_11
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/send2trash-1.8.3 python_targets_python3_11
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/service-identity-24.2.0 python_targets_python3_11
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/twisted-24.11.0-r1 python_targets_python3_11
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/qtpy-2.4.3 python_targets_python3_11 svg multimedia
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=media-libs/opencv-4.10.0 python_targets_python3_11 png python jpeg
+# required by dev-python/hatchling-1.27.0::gentoo[-test]
+# required by dev-python/soupsieve-2.6::gentoo
+# required by dev-python/beautifulsoup4-4.13.3::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/packaging-24.2 python_targets_python3_11
+# required by dev-python/qtpy-2.4.3::gentoo[pyqt6]
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/pyqt6-6.8.1 python_targets_python3_11 multimedia
+# required by dev-python/lxml-5.3.1::gentoo
+# required by dev-python/beautifulsoup4-4.13.3::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/gpep517-17 python_targets_python3_11
+# required by dev-python/six-1.17.0::gentoo
+# required by dev-python/html5lib-1.1-r2::gentoo
+# required by dev-python/beautifulsoup4-4.13.3::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/setuptools-78.1.0 python_targets_python3_11
+# required by dev-python/setuptools-78.1.0::gentoo
+# required by dev-python/cbor2-5.6.5::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/jaraco-collections-5.1.0 python_targets_python3_11
+# required by dev-python/setuptools-78.1.0::gentoo
+# required by dev-python/cbor2-5.6.5::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/jaraco-functools-4.1.0 python_targets_python3_11
+# required by dev-python/setuptools-78.1.0::gentoo
+# required by dev-python/cbor2-5.6.5::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/jaraco-text-4.0.0 python_targets_python3_11
+# required by dev-python/setuptools-78.1.0::gentoo
+# required by dev-python/cbor2-5.6.5::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/more-itertools-10.6.0 python_targets_python3_11
+# required by dev-python/setuptools-78.1.0::gentoo
+# required by dev-python/cbor2-5.6.5::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/platformdirs-4.3.7 python_targets_python3_11
+# required by dev-python/setuptools-78.1.0::gentoo
+# required by dev-python/cbor2-5.6.5::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/wheel-0.45.1 python_targets_python3_11
+# required by dev-python/sip-6.10.0::gentoo
+# required by dev-python/pyqt-builder-1.18.1::gentoo
+# required by dev-python/pyqt6-6.8.1::gentoo
+# required by dev-python/qtpy-2.4.3::gentoo[pyqt6]
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/setuptools-scm-8.2.1 python_targets_python3_11
+# required by dev-python/setuptools-78.1.0::gentoo
+# required by dev-python/cbor2-5.6.5::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/trove-classifiers-2025.3.19.19 python_targets_python3_11
+# required by dev-python/idna-3.10::gentoo
+# required by dev-python/requests-2.32.3::gentoo
+# required by dev-python/requests-toolbelt-1.0.0::gentoo
+# required by dev-python/cloudscraper-1.2.69::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/flit-core-3.12.0 python_targets_python3_11
+# required by dev-python/jaraco-text-4.0.0::gentoo
+# required by dev-python/jaraco-collections-5.1.0::gentoo
+# required by dev-python/setuptools-78.1.0::gentoo
+# required by dev-python/cbor2-5.6.5::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/jaraco-context-6.0.1 python_targets_python3_11
+# required by dev-python/gpep517-17::gentoo
+# required by dev-python/soupsieve-2.6::gentoo
+# required by dev-python/beautifulsoup4-4.13.3::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/installer-0.7.0 python_targets_python3_11
+# required by dev-python/pyqt6-6.8.1::gentoo[dbus]
+# required by dev-python/qtpy-2.4.3::gentoo[pyqt6]
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/dbus-python-1.4.0 python_targets_python3_11
+# required by dev-python/pyqt6-6.8.1::gentoo
+# required by dev-python/qtpy-2.4.3::gentoo[pyqt6]
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/pyqt6-sip-13.10.0 python_targets_python3_11
+# required by dev-python/pyqt6-6.8.1::gentoo
+# required by dev-python/qtpy-2.4.3::gentoo[pyqt6]
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/pyqt-builder-1.18.1 python_targets_python3_11
+# required by dev-python/pyqt6-6.8.1::gentoo
+# required by dev-python/qtpy-2.4.3::gentoo[pyqt6]
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/sip-6.10.0 python_targets_python3_11
+# required by dev-python/twisted-24.11.0-r1::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/attrs-25.3.0 python_targets_python3_11
+# required by dev-python/twisted-24.11.0-r1::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/automat-24.8.1 python_targets_python3_11
+# required by dev-python/twisted-24.11.0-r1::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/constantly-23.10.4 python_targets_python3_11
+# required by dev-python/twisted-24.11.0-r1::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/hyperlink-21.0.0-r1 python_targets_python3_11
+# required by dev-python/twisted-24.11.0-r1::gentoo[-test]
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/incremental-24.7.2 python_targets_python3_11
+# required by dev-python/pyopenssl-25.0.0::gentoo[python_targets_python3_11,python_targets_python3_12,-python_targets_python3_10]
+# required by dev-python/twisted-24.11.0-r1::gentoo[ssl]
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/typing-extensions-4.12.2 python_targets_python3_11
+# required by dev-python/twisted-24.11.0-r1::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/zope-interface-7.2 python_targets_python3_11
+# required by dev-python/requests-2.32.3::gentoo
+# required by dev-python/requests-toolbelt-1.0.0::gentoo
+# required by dev-python/cloudscraper-1.2.69::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/idna-3.10 python_targets_python3_11
+# required by dev-python/attrs-25.3.0::gentoo
+# required by dev-python/service-identity-24.2.0::gentoo
+# required by dev-python/twisted-24.11.0-r1::gentoo[ssl]
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/hatch-fancy-pypi-readme-24.1.0 python_targets_python3_11
+# required by dev-python/twisted-24.11.0-r1::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/hatchling-1.27.0 python_targets_python3_11
+# required by dev-python/hatchling-1.27.0::gentoo[-test]
+# required by dev-python/soupsieve-2.6::gentoo
+# required by dev-python/beautifulsoup4-4.13.3::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/editables-0.5 python_targets_python3_11
+# required by dev-python/hatchling-1.27.0::gentoo[-test]
+# required by dev-python/soupsieve-2.6::gentoo
+# required by dev-python/beautifulsoup4-4.13.3::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/pathspec-0.12.1 python_targets_python3_11
+# required by dev-python/hatchling-1.27.0::gentoo[-test]
+# required by dev-python/soupsieve-2.6::gentoo
+# required by dev-python/beautifulsoup4-4.13.3::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/pluggy-1.5.0 python_targets_python3_11
+# required by dev-python/incremental-24.7.2::gentoo
+# required by dev-python/twisted-24.11.0-r1::gentoo[-test]
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/click-8.1.8 python_targets_python3_11
+# required by dev-python/constantly-23.10.4::gentoo
+# required by dev-python/twisted-24.11.0-r1::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/versioneer-0.29-r1 python_targets_python3_11
+# required by dev-python/attrs-25.3.0::gentoo
+# required by dev-python/service-identity-24.2.0::gentoo
+# required by dev-python/twisted-24.11.0-r1::gentoo[ssl]
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/hatch-vcs-0.4.0 python_targets_python3_11
+# required by dev-python/pyopenssl-25.0.0::gentoo
+# required by dev-python/twisted-24.11.0-r1::gentoo[ssl]
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/cryptography-44.0.2 python_targets_python3_11
+# required by dev-python/pyasn1-modules-0.4.2::gentoo
+# required by dev-python/service-identity-24.2.0::gentoo
+# required by dev-python/twisted-24.11.0-r1::gentoo[ssl]
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/pyasn1-0.6.1 python_targets_python3_11
+# required by dev-python/service-identity-24.2.0::gentoo
+# required by dev-python/twisted-24.11.0-r1::gentoo[ssl]
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/pyasn1-modules-0.4.2 python_targets_python3_11
+# required by dev-python/cryptography-44.0.2::gentoo[python_targets_python3_11,python_targets_python3_12,-python_targets_python3_10,python_targets_python3_13,-test]
+# required by dev-python/pyopenssl-25.0.0::gentoo
+# required by dev-python/twisted-24.11.0-r1::gentoo[ssl]
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/cffi-1.17.1 python_targets_python3_11
+# required by dev-python/cryptography-44.0.2::gentoo
+# required by dev-python/pyopenssl-25.0.0::gentoo
+# required by dev-python/twisted-24.11.0-r1::gentoo[ssl]
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-util/maturin-1.8.3 python_targets_python3_11
+# required by dev-python/cffi-1.17.1::gentoo[-test]
+# required by dev-python/cryptography-44.0.2::gentoo[python_targets_python3_11,python_targets_python3_12,-python_targets_python3_10,python_targets_python3_13,-test]
+# required by dev-python/pyopenssl-25.0.0::gentoo
+# required by dev-python/twisted-24.11.0-r1::gentoo[ssl]
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/pycparser-2.22 python_targets_python3_11
+# required by dev-python/pycparser-2.22::gentoo[-test]
+# required by dev-python/cffi-1.17.1::gentoo[-test]
+# required by dev-python/cryptography-44.0.2::gentoo[python_targets_python3_11,python_targets_python3_12,-python_targets_python3_10,python_targets_python3_13,-test]
+# required by dev-python/pyopenssl-25.0.0::gentoo
+# required by dev-python/twisted-24.11.0-r1::gentoo[ssl]
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/ply-3.11-r2 python_targets_python3_11
+# required by dev-python/requests-2.32.3::gentoo
+# required by dev-python/requests-toolbelt-1.0.0::gentoo
+# required by dev-python/cloudscraper-1.2.69::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/certifi-3024.7.22 python_targets_python3_11
+# required by dev-python/requests-2.32.3::gentoo
+# required by dev-python/requests-toolbelt-1.0.0::gentoo
+# required by dev-python/cloudscraper-1.2.69::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/charset-normalizer-3.4.1 python_targets_python3_11
+# required by dev-python/requests-2.32.3::gentoo
+# required by dev-python/requests-toolbelt-1.0.0::gentoo
+# required by dev-python/cloudscraper-1.2.69::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/urllib3-2.3.0 python_targets_python3_11
+# required by dev-python/urllib3-2.3.0::gentoo
+# required by dev-python/requests-2.32.3::gentoo
+# required by dev-python/requests-toolbelt-1.0.0::gentoo
+# required by dev-python/cloudscraper-1.2.69::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/pysocks-1.7.1-r2 python_targets_python3_11
+# required by dev-python/lxml-5.3.1::gentoo
+# required by dev-python/beautifulsoup4-4.13.3::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+=dev-python/cython-3.0.12 python_targets_python3_11
+# required by dev-python/pillow-11.1.0::gentoo
+# required by dev-python/python-mpv-1.0.7::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/olefile-0.47 python_targets_python3_11
+# required by dev-python/numpy-2.2.4::gentoo
+# required by media-libs/opencv-4.10.0::gentoo[python]
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/meson-python-0.17.1 python_targets_python3_11
+# required by dev-python/meson-python-0.17.1::gentoo[-test]
+# required by dev-python/numpy-2.2.4::gentoo
+# required by media-libs/opencv-4.10.0::gentoo[python]
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/pyproject-metadata-0.9.1 python_targets_python3_11
+# required by dev-python/html5lib-1.1-r2::gentoo
+# required by dev-python/beautifulsoup4-4.13.3::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/six-1.17.0 python_targets_python3_11
+# required by dev-python/html5lib-1.1-r2::gentoo
+# required by dev-python/beautifulsoup4-4.13.3::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/webencodings-0.5.1-r2 python_targets_python3_11
+# required by dev-python/cloudscraper-1.2.69::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/pyparsing-3.2.3 python_targets_python3_11
+# required by dev-python/cloudscraper-1.2.69::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/requests-toolbelt-1.0.0 python_targets_python3_11
+# required by dev-python/beautifulsoup4-4.13.3::gentoo
+# required by media-gfx/hydrus-571::gentoo[python_single_target_python3_11]
+# required by media-gfx/hydrus (argument)
+>=dev-python/soupsieve-2.6 python_targets_python3_11
+# required by kde-misc/kdeconnect-24.12.3::gentoo
+# required by kde-misc/kdeconnect (argument)
+>=dev-qt/qtmultimedia-6.8.3 qml
+# required by kde-frameworks/kio-6.10.0::gentoo
+# required by kde-frameworks/kcmutils-6.10.0::gentoo
+# required by kde-plasma/keditfiletype-6.2.5::gentoo
+>=dev-qt/qtbase-6.8.3 libproxy
+# required by app-emulation/virt-manager-5.0.0-r2::gentoo[gui]
+# required by @selected
+# required by @world (argument)
+>=net-misc/spice-gtk-0.42-r4 usbredir
+# required by games-util/gamemode-1.8.2::gentoo
+# required by games-util/gamemode (argument)
+>=sys-apps/dbus-1.16.2 elogind
+# required by razer-cli[test] (argument)
+>=sys-apps/razer-cli-2.2.1-r2 test
+# required by sys-apps/razer-cli-2.2.1-r2::gentoo[test]
+# required by @selected
+# required by @world (argument)
+>=x11-base/xorg-server-21.1.16 xvfb
+# required by x11-base/xorg-server-21.1.16::gentoo[elogind]
+# required by x11-drivers/xf86-input-libinput-1.5.0::gentoo
+# required by x11-base/xorg-drivers-21.1-r2::gentoo[input_devices_libinput]
+>=sys-auth/pambase-20250223 elogind
+# required by razer-cli[-test] (argument)
+>=sys-apps/razer-cli-2.2.1-r2 -test
+# required by dev-python/lxml-5.3.2-r1::gentoo
+# required by sys-apps/systemd-utils-255.15-r1::gentoo[python_single_target_python3_13]
+# required by virtual/libudev-251-r2::gentoo[-systemd]
+# required by net-misc/networkmanager-1.48.10-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/cython-3.0.12-r1 python_targets_python3_11
+# required by net-vpn/i2p-2.8.2::gentoo
+# required by net-vpn/i2p (argument)
+>=sys-devel/gettext-0.22.5-r2 java
+# required by app-emulation/libguestfs-1.54.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=app-misc/hivex-1.3.24-r1 ocaml
+# required by app-emulation/libguestfs-1.54.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/netpbm-11.2.13-r1 png
+# required by dev-libs/libratbag-0.18::gentoo-zh[python_single_target_python3_12,-test]
+# required by app-misc/piper-0.8::gentoo
+# required by =app-misc/piper-0.8 (argument)
+>=dev-python/evdev-1.9.2 python_targets_python3_12
+# required by dev-python/setuptools-scm-8.3.1::gentoo
+# required by dev-python/setuptools-80.8.0::gentoo
+# required by dev-python/evdev-1.9.2::gentoo
+# required by dev-libs/libratbag-0.18::gentoo-zh[python_single_target_python3_12,-test]
+# required by app-misc/piper-0.8::gentoo
+# required by =app-misc/piper-0.8 (argument)
+>=dev-python/gpep517-19 python_targets_python3_12
+# required by dev-python/evdev-1.9.2::gentoo
+# required by dev-libs/libratbag-0.18::gentoo-zh[python_single_target_python3_12,-test]
+# required by app-misc/piper-0.8::gentoo
+# required by =app-misc/piper-0.8 (argument)
+>=dev-python/setuptools-80.8.0 python_targets_python3_12
+# required by dev-python/setuptools-80.8.0::gentoo
+# required by dev-python/setuptools-scm-8.3.1::gentoo[-test]
+>=dev-python/jaraco-collections-5.1.0 python_targets_python3_12
+# required by dev-python/setuptools-80.8.0::gentoo
+# required by dev-python/setuptools-scm-8.3.1::gentoo[-test]
+>=dev-python/jaraco-functools-4.1.0 python_targets_python3_12
+# required by dev-python/setuptools-80.8.0::gentoo
+# required by dev-python/setuptools-scm-8.3.1::gentoo[-test]
+>=dev-python/jaraco-text-4.0.0 python_targets_python3_12
+# required by dev-python/setuptools-80.8.0::gentoo
+# required by dev-python/setuptools-scm-8.3.1::gentoo[-test]
+>=dev-python/more-itertools-10.7.0 python_targets_python3_12
+# required by dev-python/setuptools-80.8.0::gentoo
+# required by dev-python/setuptools-scm-8.3.1::gentoo[-test]
+>=dev-python/packaging-25.0 python_targets_python3_12
+# required by dev-python/setuptools-80.8.0::gentoo
+# required by dev-python/setuptools-scm-8.3.1::gentoo[-test]
+>=dev-python/platformdirs-4.3.8 python_targets_python3_12
+# required by dev-python/setuptools-80.8.0::gentoo
+# required by dev-python/setuptools-scm-8.3.1::gentoo[-test]
+>=dev-python/wheel-0.45.1 python_targets_python3_12
+# required by dev-python/setuptools-80.8.0::gentoo
+# required by dev-python/evdev-1.9.2::gentoo
+# required by dev-libs/libratbag-0.18::gentoo-zh[python_single_target_python3_12,-test]
+# required by app-misc/piper-0.8::gentoo
+# required by =app-misc/piper-0.8 (argument)
+>=dev-python/setuptools-scm-8.3.1 python_targets_python3_12
+# required by dev-python/setuptools-80.8.0::gentoo
+# required by dev-python/setuptools-scm-8.3.1::gentoo[-test]
+>=dev-python/trove-classifiers-2025.5.9.12 python_targets_python3_12
+# required by dev-python/jaraco-context-6.0.1-r1::gentoo
+# required by dev-python/jaraco-text-4.0.0::gentoo
+# required by dev-python/jaraco-collections-5.1.0::gentoo
+# required by dev-python/setuptools-80.8.0::gentoo
+# required by dev-python/setuptools-scm-8.3.1::gentoo[-test]
+>=dev-python/flit-core-3.12.0 python_targets_python3_12
+# required by dev-python/jaraco-text-4.0.0::gentoo
+# required by dev-python/jaraco-collections-5.1.0::gentoo
+# required by dev-python/setuptools-80.8.0::gentoo
+# required by dev-python/setuptools-scm-8.3.1::gentoo[-test]
+>=dev-python/jaraco-context-6.0.1-r1 python_targets_python3_12
+# required by dev-python/gpep517-19::gentoo
+# required by dev-python/jaraco-collections-5.1.0::gentoo
+# required by dev-python/setuptools-80.8.0::gentoo
+# required by dev-python/setuptools-scm-8.3.1::gentoo[-test]
+>=dev-python/installer-0.7.0 python_targets_python3_12
+# required by dev-python/matplotlib-3.10.3::gentoo[-test]
+# required by matplotlib (argument)
+>=dev-python/pillow-11.2.1 webp
+# required by dev-python/matplotlib-3.10.3::gentoo[-test]
+# required by matplotlib (argument)
+>=virtual/imagemagick-tools-1 jpeg tiff
+# required by virtual/imagemagick-tools-1::gentoo[-svg]
+# required by dev-python/matplotlib-3.10.3::gentoo[-test]
+# required by matplotlib (argument)
+>=media-gfx/imagemagick-7.1.1.38-r3 tiff
+# required by sys-boot/os-prober-1.82::gentoo
+# required by sys-boot/os-prober (argument)
+>=sys-boot/grub-2.12-r7 mount
+# required by media-video/obs-studio-31.1.2::gentoo
+# required by media-video/obs-studio (argument)
+>=media-video/ffmpeg-7.1.1-r2 opus x264
+# required by media-video/ffmpeg-7.1.1-r2::gentoo[dav1d]
+# required by ffmpeg (argument)
+>=media-libs/dav1d-1.5.0 abi_x86_32
+# required by media-video/ffmpeg-7.1.1-r2::gentoo[libass]
+# required by ffmpeg (argument)
+>=media-libs/libass-0.17.1-r2 abi_x86_32
+# required by media-video/ffmpeg-7.1.1-r2::gentoo[vulkan]
+# required by ffmpeg (argument)
+>=media-libs/vulkan-loader-1.4.313.0 abi_x86_32
+# required by media-video/ffmpeg-7.1.1-r2::gentoo[x264]
+# required by ffmpeg (argument)
+>=media-libs/x264-0.0.20240513 abi_x86_32
+# required by dev-python/pyqt6-6.9.1::gentoo[designer]
+# required by dev-python/pyqt6 (argument)
+>=dev-qt/qttools-6.9.1 designer
+# required by app-misc/ani-cli-4.10::guru
+# required by @selected
+# required by @world (argument)
+>=net-misc/aria2-1.37.0 adns
+# required by dev-libs/libratbag-0.18::gentoo-zh[python_single_target_python3_12,-test]
+# required by app-misc/piper-0.8::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/pygobject-3.50.1 python_targets_python3_12
+# required by dev-python/pygobject-3.50.1::gentoo[cairo]
+# required by gui-libs/gtk-4.16.13::gentoo[introspection]
+# required by gui-libs/vte-common-0.78.5::gentoo
+# required by x11-libs/vte-0.78.5::gentoo
+# required by app-emulation/virt-manager-5.0.0-r2::gentoo[gui]
+# required by @selected
+# required by @world (argument)
+>=dev-python/pycairo-1.28.0 python_targets_python3_12
+# 
+=dev-qt/qtdeclarative-6.9.2-r1 -vulkan -opengl
+# required by dev-qt/qtdeclarative-6.9.2-r1::gentoo
+# required by gui-libs/hyprland-qt-support-0.1.0::gentoo
+# required by gui-libs/hyprland-qtutils-0.1.4::gentoo
+# required by gui-wm/hyprland-0.49.0::gentoo[qtutils]
+# required by @selected
+# required by @world (argument)
+=dev-qt/qtbase-6.9.2 -vulkan -opengl
+# 
+=dev-qt/qtdeclarative-6.9.2-r1 opengl vulkan
+# required by dev-python/pyside-6.9.3::gentoo[tools]
+# required by @selected
+# required by @world (argument)
+>=dev-qt/qtdeclarative-6.9.3-r1 qmlls
+# required by dev-python/pyside-6.9.2::gentoo[tools]
+# required by @selected
+# required by @world (argument)
+=dev-qt/qtdeclarative-6.9.2-r1 qmlls
+# required by x11-libs/pango-1.57.0::gentoo
+# required by gui-libs/vte-common-0.80.4::gentoo
+# required by x11-libs/vte-0.80.4::gentoo
+# required by app-emulation/virt-manager-5.1.0::gentoo[gui]
+# required by @selected
+# required by @world (argument)
+>=media-libs/freetype-2.13.3 harfbuzz

@@ -1,0 +1,2 @@
+mail-client/mutt gpgme
+mail-client/neomutt gpgme sasl

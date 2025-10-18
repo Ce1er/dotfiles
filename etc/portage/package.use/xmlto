@@ -1,0 +1,24 @@
+app-text/xmlto text
+# required by kde-frameworks/kirigami-6.10.0::gentoo
+# required by kde-frameworks/qqc2-desktop-style-6.10.0::gentoo
+# required by gui-libs/hyprland-qtutils-0.1.1::gentoo
+# required by gui-wm/hyprland-0.46.2-r1::gentoo[qtutils]
+# required by @selected
+# required by @world (argument)
+>=dev-qt/qt5compat-6.8.3 qml
+# required by kde-frameworks/qqc2-desktop-style-6.10.0::gentoo
+# required by @__auto_slot_operator_replace_installed__ (argument)
+=dev-qt/qtdeclarative-6.8.2 -vulkan -opengl
+# required by dev-qt/qtdeclarative-6.8.2::gentoo
+# required by kde-frameworks/kguiaddons-6.10.0::gentoo
+# required by kde-frameworks/kcolorscheme-6.10.0::gentoo
+# required by kde-frameworks/kiconthemes-6.10.0::gentoo
+# required by kde-frameworks/qqc2-desktop-style-6.10.0::gentoo
+# required by gui-libs/hyprland-qtutils-0.1.1::gentoo
+# required by gui-wm/hyprland-0.46.2-r1::gentoo[qtutils]
+# required by @selected
+# required by @world (argument)
+=dev-qt/qtbase-6.8.2-r2 -vulkan -opengl
+# required by kde-frameworks/qqc2-desktop-style-6.10.0::gentoo
+# required by @__auto_slot_operator_replace_installed__ (argument)
+=dev-qt/qtdeclarative-6.8.2 vulkan opengl

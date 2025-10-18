@@ -11,6 +11,17 @@ return {
   },
   config = function()
     lsp = {
+      signature = {
+        enabled = true,
+        auto_open = {
+          enabled = true,
+          trigger = true,
+          luasnip = true,
+          throttle = 50,
+        },
+        view = nil,
+        opts = {},
+      },
       -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
       override = {
         ["vim.lsp.util.convert_input_to_markdown_lines"] = true,

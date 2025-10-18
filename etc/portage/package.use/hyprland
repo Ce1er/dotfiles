@@ -1,0 +1,2 @@
+gui-wm/hyprland -qtutils
+# >=gui-wm/hyprland-0.49 qtutils

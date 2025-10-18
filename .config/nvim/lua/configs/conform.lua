@@ -4,6 +4,8 @@ return {
   opts = {
     formatters_by_ft = {
       bash = { "beautysh" },
+      c = { "clang-format" },
+      cpp = { "clang-format" },
       css = { "prettier" },
       html = { "prettier" },
       javascript = { "prettier" },
@@ -14,7 +16,7 @@ return {
       markdown = { "prettier" },
       python = { "black" },
       sh = { "beautysh" },
-      toml = {"taplo"},
+      toml = { "taplo" },
       xml = { "xmlformatter" },
       yaml = { "prettier" },
       zsh = { "beautysh" },
@@ -27,3 +29,5 @@ return {
     },
   },
 }
+
+-- TODO: keybind for formatting. Formatting on save not ideal.

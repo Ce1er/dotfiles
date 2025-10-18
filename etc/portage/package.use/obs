@@ -1,0 +1,3 @@
+media-video/obs-studio nvenc pipewire wayland v4l
+# May also need dev-qt/qtwebkit
+media-video/ffmpeg

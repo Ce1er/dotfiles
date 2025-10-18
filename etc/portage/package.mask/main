@@ -1,0 +1,28 @@
+# vim: set foldmethod=marker:
+
+# Pulseaudio {{{
+media-sound/pulseaudio-daemon
+# }}}
+
+# Systemd {{{
+sys-apps/systemd
+# }}}
+
+# Qt {{{
+# To prevent slot conflicts
+=dev-qt/qtbase-6.9.2
+=dev-qt/qtwayland-6.9.2 
+=dev-qt/qttranslations-6.9.2 
+=dev-qt/qtnetworkauth-6.9.2 
+=dev-qt/qtshadertools-6.9.2 
+=dev-qt/qtsvg-6.9.2 
+=dev-qt/qt5compat-6.9.2 
+=dev-qt/qtdeclarative-6.9.2
+# }}}
+
+=app-emulation/libguestfs-1.54.1-r1 # violates sandbox
+=app-emulation/libguestfs-appliance-1.54.0 # can't be installed without one above
+
+app-arch/7zip # I want p7zip instead
+
+>x11-drivers/nvidia-drivers-580 # Not supported for 1080GTX
