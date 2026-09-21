@@ -1,4 +1,9 @@
+-- add yours here
+require "nvchad.mappings"
+
 local map = vim.keymap.set
+
+map("i", "<C-BS>", "<C-W>")
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
 
@@ -57,6 +62,10 @@ end, { desc = "Next todo comment" })
 map("n", "[t", function()
   require("todo-comments").jump_prev()
 end, { desc = "Previous todo comment" })
+
+map("n", "<leader>F", function()
+  require("conform").format()
+end)
 
 -- You can also specify a list of valid jump keywords
 --

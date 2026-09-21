@@ -1,17 +1,16 @@
 return {
   "stevearc/conform.nvim",
-  event = "BufWritePost", -- format on save
+  -- event = { "BufEnter" }, -- format on save
+  cmd = { "ConformInfo" },
   opts = {
     formatters_by_ft = {
       bash = { "beautysh" },
-      c = { "clang-format" },
-      cpp = { "clang-format" },
       css = { "prettier" },
       html = { "prettier" },
       javascript = { "prettier" },
       json = { "prettier" },
       jsonc = { "prettier" },
-      latex = { "latexindent" },
+      tex = {"latexindent"},
       lua = { "stylua" },
       markdown = { "prettier" },
       python = { "black" },
@@ -21,13 +20,8 @@ return {
       yaml = { "prettier" },
       zsh = { "beautysh" },
     },
-    lsp_fallback = true,
     format_on_save = {
-      -- These options will be passed to conform.format()
-      enabled = true,
-      timeout_ms = 50000,
+      enabled = false,
     },
   },
 }
-
--- TODO: keybind for formatting. Formatting on save not ideal.
