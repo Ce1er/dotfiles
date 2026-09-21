@@ -3,11 +3,11 @@
 wallpaper_dir=~/.config/hypr/current-wallpapers/
 wallpaper=${1:-$(find $wallpaper_dir | sort -R | tail -n 1)}
 echo $wallpaper
-swww img --transition-fps 240 --transition-type grow --transition-pos bottom-right $wallpaper &
+awww img --transition-fps 60 --transition-type grow --transition-pos bottom-right $wallpaper &
 # if [ $(pgrep wayvnc) != ""]; then
-#     swww img -o HEADLESS --transition-step 255 $wallpaper
+#     awww img -o HEADLESS --transition-step 255 $wallpaper
 # fi
-# wal -n -i "$(swww query | head -n 1 | awk '{ print $8 }')"
+# wal -n -i "$(awww query | head -n 1 | awk '{ print $8 }')"
 base=$(basename $wallpaper)
 echo $base
 if [ -f ~/.config/wal/colorschemes/$base.json ]; then
