@@ -16,6 +16,6 @@ else
   wal -n -i $wallpaper 
   # cp ~/.cache/wal/colors.json ~/.config/wal/colorschemes/$base.json
 fi
-razer-cli -e static -c $(awk 'NR==2 {print substr($0, 2)}' ~/.cache/wal/colors) & # n is the line number to use
+# razer-cli -e static -c $(awk 'NR==2 {print substr($0, 2)}' ~/.cache/wal/colors) & # n is the line number to use
 
 ~/.config/hypr/scripts/reload-configs.sh

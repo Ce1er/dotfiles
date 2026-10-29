@@ -1,4 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
+current="$(hyprctl activeworkspace | awk 'NR=1 { print $3 }' | head -n1)"
 read -p "New name: " -a name
-hyprctl dispatch renameworkspace $(hyprctl activeworkspace | awk 'NR==1 { print $3 }') ${name}
+if [[ -z "${name}" ]]; then
+  name=${current}
+fi
+hyprctl dispatch "hl.dsp.workspace.rename({workspace=${current}, name='${name}'})"
