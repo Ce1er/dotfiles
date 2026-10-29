@@ -65,14 +65,14 @@ return {
     end
 
     -- Close DAP UI when debugging ends
-    dap.listeners.before.event_terminated["dapui_config"] = function()
-      dapui.close()
-    end
+    -- dap.listeners.before.event_terminated["dapui_config"] = function()
+    --   dapui.close()
+    -- end
 
     -- Close DAP UI when the debugging session is exited
-    dap.listeners.before.event_exited["dapui_config"] = function()
-      dapui.close()
-    end
+    -- dap.listeners.before.event_exited["dapui_config"] = function()
+    --   dapui.close()
+    -- end
 
     local map = vim.keymap.set
     map("n", "<Leader>u", dapui.toggle, { noremap = true, silent = true, desc = "Toggle DAP UI" })

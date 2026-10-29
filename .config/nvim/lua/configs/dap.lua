@@ -8,9 +8,9 @@ return {
     local dap = require "dap"
 
     dap.adapters.python = {
-      type = "server",
-      host = "127.0.0.1",
-      port = 5678,
+      type = "executable",
+      command = "debugpy-adapter",
+      args = {},
     }
 
     dap.configurations.python = {
@@ -24,17 +24,6 @@ return {
         pythonPath = function()
           return "/usr/bin/python"
         end,
-      },
-      {
-        type = "python",
-        request = "attach",
-        name = "Attach to Python",
-        connect = {
-          host = "127.0.0.1",
-          port = 5678,
-        },
-        mode = "client",
-        justMyCode = false,
       },
     }
   end,

@@ -43,11 +43,6 @@ return {
   require "configs.lint",
   -- }}}
 
-  -- Lsp {{{
-  -- Lsp
-  require "configs.lspconfig",
-  -- }}}
-
   -- mkdir {{{
   -- Automatically create missing directories when saving files
   require "configs.mkdir",

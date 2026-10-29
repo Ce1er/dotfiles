@@ -7,6 +7,7 @@ return {
       bash = { "beautysh" },
       css = { "prettier" },
       html = { "prettier" },
+      java = { "clang-format" },
       javascript = { "prettier" },
       json = { "prettier" },
       jsonc = { "prettier" },

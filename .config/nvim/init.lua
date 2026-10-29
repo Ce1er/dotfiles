@@ -36,8 +36,8 @@ require("lazy").setup({
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
 
-require "options"
 require "nvchad.autocmds"
+require "options"
 
 vim.schedule(function()
   require "mappings"
@@ -52,3 +52,33 @@ vim.api.nvim_create_autocmd({ "InsertEnter" }, {
     vim.opt.hlsearch = false
   end,
 })
+
+vim.api.nvim_create_autocmd({ "LspAttach" }, {
+  pattern = "*",
+  callback = function()
+    vim.lsp.inlay_hint.enable(true)
+  end,
+})
+
+-- LSP
+local servers = {
+  "ast-grep",
+  "clangd",
+  "css-lsp",
+  "cssls",
+  "html-lsp",
+  "jdtls",
+  "lemminx",
+  "lua-language-server",
+  "pyright",
+  "ruff",
+  "stylua",
+  "taplo",
+  "texlab",
+  "textlsp",
+}
+
+for _, lsp in ipairs(servers) do
+  vim.lsp.enable(lsp)
+  vim.lsp.config(lsp, {})
+end
